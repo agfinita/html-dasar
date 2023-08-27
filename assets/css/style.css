@@ -1,8 +1,12 @@
 .navbarStyle{
-    background-color: antiquewhite;
-    padding: 20%;
-};
+    font-family: Helvetica, Arial, sans-serif;
+}
 
 .body {
     background: #e6f4fd;
-  };
+    padding: 1%;
+  }
+
+.font1 {
+    font-family: "Times New Roman", Times, serif;
+  }
