@@ -10,3 +10,13 @@
 .font1 {
     font-family: "Times New Roman", Times, serif;
   }
+
+.table {
+    border: 1px solid-black;
+    border-collapse: collapse;
+}
+
+.icon {
+    width: 10px;
+    height: 10px
+}
