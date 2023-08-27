@@ -12,7 +12,8 @@
   }
 
 .table {
-    border: 3px solid-black;
+    border-width: 3px;
+    border-color: blue;
     border-collapse: collapse;
 }
 
