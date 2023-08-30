@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>AGFINITA GUSTI HIKMAWANI's site</title>
+
+        <!--favicon-->
+        <link rel="icon" type="image/png" href="/html-dasar/assets/img/icons8-cat-64.png">
+    </head>
+
+    <body style="padding-left: 1%; padding-top: 0.5%">
+        <h3>Form Pendaftaran Studi Independen 2023 - PT Arkatama Multi Solusindo</h3>
+
+        <form enctype="multipart/form-data" method="get" name="formulir pendaftaran">
+            <!--form nama-->
+            <label for="isian_nama"> Nama </label></br>
+            <input type="text" id="isian_nama" name="nama" placeholder="Nama lengkap" />
+            </br></br>
+            
+            <!--form email-->
+            <label for="isian_email"> Email </label></br>
+            <input type="email" id="isian_email" name="email" placeholder="Email aktif" />
+            </br></br>
+
+            <!--form nomor telp-->
+            <label for="tlp"> No HP </label></br>
+            <input type="tel" id="tlp" name="telepon" placeholder="No HP aktif" />
+            </br></br>
+
+            <!--form jenis kelamin-->
+            Jenis Kelamin</br>
+            <input type="radio" name="jk" id="jk-laki" />
+            <label for="jk-laki"> Laki-laki </label></br>
+
+            <input type="radio" name="jk" id="jk-perem" />
+            <label for="jk-perem"> Perempuan </label>
+            </br></br>
+
+            <!--form prodi-->
+            <label for="prodi"> Prodi </label></br>
+            <select id="prodi" name="jurusan">
+                <option value="pilih"> Pilih </option>
+                <option value="TI"> Teknik Informatika </option>
+                <option value="SI"> Sistem Informasi </option>
+                <option value="MI"> Manajemen Informatika </option>
+                <option value="lain"> Lainnya </option>
+            </select>
+            </br>
+
+            <!--form hobi-->
+            Hobi</br>
+            <input type="checkbox" id="baca" />
+            <label for="baca" name="membaca"> Membaca </label></br>
+
+            <input type="checkbox" id="tulis" />
+            <label for="tulis" name="menulis"> Menulis </label></br>
+
+            <input type="checkbox" id="nyanyi" />
+            <label for="nyanyi" name="bernyanyi"> Bernyanyi </label></br>
+
+            <input type="checkbox" id="olga" />
+            <label for="olga" name="olahraga"> Olahraga </label>
+            </br></br>
+
+            <!--form alamat-->
+            <label for="alamat"> Alamat </label></br>
+            <textarea id="alamat" name="almt" placeholder="Alamat lengkap" rows="2" cols="25"></textarea>
+            </br></br>
+
+            <!--form foto-->
+            <label for="input_file"> Foto Diri </label></br>
+            <input id="input_file" type="file" name="file" /></br>
+
+            <!--button submit-->
+            <input type="submit" value="Daftar" onclick="alert('success')" />
+        </form>
+    </body>
+</html>
