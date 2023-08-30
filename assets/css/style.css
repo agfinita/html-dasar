@@ -21,6 +21,5 @@
   border-style: dotted;
   border-radius: 2px;
   border-color: blueviolet;
-  height: 5px;
-  width: 25px;
+  padding: 3px;
 }
