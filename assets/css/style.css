@@ -2,7 +2,7 @@
     font-family: "Helvetica", Arial, sans-serif;
 }
 
-.container-index01 {
+.container-pages {
     background-color: #e6f4fd;
     padding: 1%;
   }
@@ -54,6 +54,7 @@ video {
   position: absolute;
   top: 20%;
   left: 55%;
+  border: none;
 }
 
 input[type=password], input [type=text] {
@@ -79,4 +80,8 @@ img[title=logocoffe] {
 
 .login, .sec-container {
   background-position: center;
+}
+
+.navbar-right {
+  text-align: right;
 }

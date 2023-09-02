@@ -15,16 +15,18 @@
 
     <body class="login">
         <nav class="navbarStyle">
-            <h1 style="text-align: left;">Nita's Blog</h1>
-            <a href="index.html">Home</a> |
-            <a href="artikel.html">Article</a>
+            <h1>Nita's Blog</h1>
+            <div class="navbar-right">
+                <a href="/tugas_sib/html-dasar/index.html">Home</a> |
+                <a href="artikel.html">Article</a>
+            </div>
         </nav>
 
         <section class="sec-container">
             <img src="/html-dasar/assets/img/coffe02.png" width="80" height="80" alt="logocoffe">
             <h3>SIGN IN</h3>
 
-            <form enctype="text/plain" method="get" name="form-login">
+            <form enctype="text/plain" action="form.html" method="get" name="form-login">
                 <label for="Username"><img src="/html-dasar/assets/img/login1 (1).png" title="logo"> Username</label><br>
                 <input type="text" name="username" id="Username" required placeholder=" Masukkan username"><br><br>
 
@@ -37,7 +39,7 @@
                 <input type="radio" id="lupa" name="pilih">
                 <label for="pilih"><small>Forgot password?</small></label><br><br>
 
-                <button type="submit" name="login"><a href="form.html"><b>Submit</b></a></button><br>
+                <button type="submit" name="login"><b>Submit</b></button><br>
                 <small>Not registered? <a href="">Create account</a></small>
             </form>
 
