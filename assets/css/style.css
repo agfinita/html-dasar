@@ -1,11 +1,18 @@
 .navbarStyle{
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Helvetica", Arial, sans-serif;
 }
 
-.body {
-    background: #e6f4fd;
+.container-index01 {
+    background-color: #e6f4fd;
     padding: 1%;
   }
+
+.login {
+    background-image: url(../img/background03.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
 .font1 {
     font-family: "Times New Roman", Times, serif;
@@ -13,13 +20,63 @@
 
 .icon {
     width: 20px;
-    height: 20px
+    height: 20px;
 }
 
 .table {
   border-collapse: collapse;
-  border-style: dotted;
+  border-style: solid;
   border-radius: 2px;
   border-color: blueviolet;
   padding: 3px;
+}
+
+.sec-container {
+  position: absolute;
+  left: 30%;
+  top: 25%;
+  padding: 20px 25px;
+  width: 500px;
+  background-color:#cea37792 ;
+  background-attachment: fixed;
+  border: 5px groove rgba(149, 118, 81, 0.914);
+}
+
+button {
+  background-color: rgba(44, 255, 62, 0.914);
+  color: #fff;
+  width: 42%;
+  padding: 5px;
+  border: none;
+}
+
+video {
+  position: absolute;
+  top: 20%;
+  left: 55%;
+}
+
+input[type=password], input [type=text] {
+  width: 40%;
+  border: 5px rgba(149, 118, 81, 0.914);
+  padding: 5px;
+}
+
+input[type=radio] {
+  height: 1%;
+  width: 2%;
+  
+}
+
+img[title=logo], img[title=sandi] {
+  width: 3%;
+  height: 2%;
+}
+
+img[title=logocoffe] {
+  bottom: 5%;
+}
+
+.login, .sec-container {
+  background-position: center;
 }
