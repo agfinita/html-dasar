@@ -36,11 +36,6 @@
     --border-items-product: rgb(103, 47, 6);
 }
 
-.img-items-product {
-    width: 150px;
-    height: 150px;
-}
-
 div h4 {
     border-bottom: 2px solid var(--border-items-product);
     margin-top: 15px;
