@@ -39,7 +39,7 @@
   top: 25%;
   padding: 20px 25px;
   width: 500px;
-  background-color:#cea37792 ;
+  background-color: #cea37792 ;
   background-attachment: fixed;
   border: 5px groove rgba(149, 118, 81, 0.914);
 }
@@ -83,5 +83,5 @@ img[title=logocoffe] {
 }
 
 #sorot-navbar:hover {
-  color:rgba(149, 118, 81, 0.914);
+  color: rgba(149, 118, 81, 0.914);
 }
