@@ -31,8 +31,13 @@
     color: var(--object-product);
 }
 
+.sec-container-product div a:hover {
+    color: var(--object-product-2);
+}
+
 .sec-container-product div p {
     margin: 5px 0;
+    font-size: 15px;
 }
 
 .sec-container-product div p:nth-child(3) {
@@ -50,6 +55,8 @@
     --bg-items-product: rgba(245, 245, 220, 0.414);
     --border-items-product: rgb(103, 47, 6);
     --object-product: rgb(113, 113, 213);
+    --font-global: "Helvetica";
+    --object-product-2: rgb(9, 9, 247);
 }
 
 div h4 {
@@ -60,18 +67,19 @@ div h4 {
 .sec-title-product {
     text-align: center;
     background-color: var(--bg-items-product);
-    margin: 4% 2% 0 2%;
-
+    margin: 4% 2% 1% 2%;
+    padding: 2px 0;
 }
 
 .sec-title-product h3 {
     margin: 30px 3px 0 3px;
-    padding: 0;
     letter-spacing: 8px;
+    color: var(--border-items-product);
 }
 
 .sec-title-product h5 {
     margin: 5px 10px 30px 3px;
+    color: var(--border-items-product);
 }
 
 /* button */
@@ -79,8 +87,11 @@ div h4 {
     width: 100%;
     margin: 10px 0 0 0;
     border-radius: 5px;
+    background-color: var(--border-items-product);
+    font-family: var(--font-global);
+    font-weight: bold;
 }
 
 .button-product:hover {
-    background-color: var(--border-items-product);
+    background-color: var(--bg-button);
 }

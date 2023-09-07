@@ -107,3 +107,8 @@ img[title=logocoffe] {
 #sorot-navbar:hover {
   color: rgba(149, 118, 81, 0.914);
 }
+
+/* padding custom */
+.padd-custom {
+  padding: 2%;
+}
