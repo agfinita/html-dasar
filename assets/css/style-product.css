@@ -9,6 +9,7 @@
     background-image: url(../img/img-product/background-product.jpg);
     background-size: cover;
     box-shadow: 1px 1px 5px var(--netral-color-black);
+    margin: 0 2% 2% 2%;
 }
 
 .sec-container-product > div {
@@ -25,6 +26,20 @@
     animation-duration: 2s;
 }
 
+.sec-container-product div a {
+    text-decoration: none;
+    color: var(--object-product);
+}
+
+.sec-container-product div p {
+    margin: 5px 0;
+}
+
+.sec-container-product div p:nth-child(3) {
+    margin-top: -6px;
+}
+
+/* variable */
 :root {
     --bg-primary: #e6f4fd;
     --bg-sec-container-login: #cea37792;
@@ -34,6 +49,7 @@
     --netral-color-black: black;
     --bg-items-product: rgba(245, 245, 220, 0.414);
     --border-items-product: rgb(103, 47, 6);
+    --object-product: rgb(113, 113, 213);
 }
 
 div h4 {
@@ -56,4 +72,15 @@ div h4 {
 
 .sec-title-product h5 {
     margin: 5px 10px 30px 3px;
+}
+
+/* button */
+.button-product {
+    width: 100%;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+}
+
+.button-product:hover {
+    background-color: var(--border-items-product);
 }
