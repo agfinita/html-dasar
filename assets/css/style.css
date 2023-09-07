@@ -1,7 +1,26 @@
-.navbarStyle{
-    font-family: "Arial",  sans-serif;
+/*  navbar  */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e6f4fd;
+  box-shadow: 2px 2px 5px black;
+  font-family: "Arial",  sans-serif;
 }
 
+.navbar-list {
+  display: flex;
+  list-style: none;
+  width: 15%;
+  justify-content: space-between;
+}
+
+.navbar-list li a{
+  text-decoration: none;
+  color: black;
+}
+
+/*  background  */
 .container-pages {
     background-color: #e6f4fd;
     padding: 1%;

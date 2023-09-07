@@ -40,3 +40,20 @@ div h4 {
     border-bottom: 2px solid var(--border-items-product);
     margin-top: 15px;
 }
+
+.sec-title-product {
+    text-align: center;
+    background-color: var(--bg-items-product);
+    margin: 4% 2% 0 2%;
+
+}
+
+.sec-title-product h3 {
+    margin: 30px 3px 0 3px;
+    padding: 0;
+    letter-spacing: 8px;
+}
+
+.sec-title-product h5 {
+    margin: 5px 10px 30px 3px;
+}
