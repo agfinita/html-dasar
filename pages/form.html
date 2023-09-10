@@ -7,10 +7,10 @@
         <title>AGFINITA GUSTI HIKMAWANI's site</title>
 
         <!--css-->
-        <link rel="stylesheet" href="/html-dasar/assets/css/style.css" />
+        <link rel="stylesheet" href="../assets/css/style.css" />
 
         <!--favicon-->
-        <link rel="icon" type="image/png" href="/html-dasar/assets/img/icons8-cat-64.png">
+        <link rel="icon" type="image/png" href="../assets/img/icons8-cat-64.png">
     </head>
 
     <body class="container-pages">
@@ -22,13 +22,20 @@
                 <li><a href="../index.html" id="sorot-navbar" >Home</a></li>
                 <li><a href="artikel.html" id="sorot-navbar" >Article</a></li>
                 <li><a href="product.html" id="sorot-navbar" >Shop</a></li>
+                <li class="dropdown-pack"><a id="sorot-navbar" >
+                    <button class="btn-dropdown">More</button></a>
+                    <div class="dropdown-content">
+                        <a href="jsdasar.html"> Javascript Dasar </a>
+                        <a href="landing.html"> Landing Page </a>
+                    </div>
+                </li>
             </ul>
         </nav>
 
         <section style="padding: 2%;">
             <h3>Form Pendaftaran Studi Independen 2023 - PT Arkatama Multi Solusindo</h3>
 
-            <form enctype="multipart/form-data" method="get" name="formulir pendaftaran">
+            <form enctype="multipart/form-data" method="get" name="formulir pendaftaran" class="sec-form">
                 <!--form nama-->
                 <label for="isian_nama"> Nama </label></br>
                 <input type="text" id="isian_nama" name="nama" placeholder="Nama lengkap" />

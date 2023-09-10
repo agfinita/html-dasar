@@ -18,7 +18,9 @@
 .navbar-list li a{
   text-decoration: none;
   color: black;
+  margin: 8px;
 }
+/**/
 
 /*  background  */
 .container-pages {
@@ -27,6 +29,15 @@
     padding: 0;
 }
 
+/* form */
+.sec-form {
+  border: 2px solid;
+  margin: 2px 51% 2px 2px;
+  padding: 25px 20px;
+  background-color: #fff;
+}
+
+/* login pages */
 .login {
     background-image: url(../img/background03.jpg);
     background-repeat: no-repeat;
@@ -45,15 +56,12 @@
     height: 20px;
 }
 
+/* table kontak */
 .table {
-  border-collapse: collapse;
-  border-style: solid;
-  border-radius: 2px;
-  border-color: blueviolet;
   padding: 3px;
   position: relative;
-  top: 35px;
 }
+/**/
 
 .sec-container {
   position: absolute;
@@ -105,5 +113,98 @@ img[title=logocoffe] {
 }
 
 #sorot-navbar:hover {
+  color: rgba(50, 107, 220, 0.914);
+}
+
+/* index content */
+.index-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 40px 25px;
+  padding: 60px 20px;
+}
+
+.index-container {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.intro-container {
+  padding-left: 60px;
+}
+/**/
+
+/* index section bottom */
+.index-part-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.index-part-bottom a {
+  text-decoration: none;
   color: rgba(149, 118, 81, 0.914);
+  font-weight: 600;
+}
+
+.index-part-bottom a:hover {
+  color: rgba(50, 107, 220, 0.914);
+}
+/**/
+
+/* dropdown-more */
+.dropdown-pack {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-pack:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown-pack:hover .btn-dropdown{
+  color: rgba(50, 107, 220, 0.914);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color:  rgba(149, 118, 81, 0.914);
+  color: #fff;
+}
+
+.btn-dropdown {
+  border: none;
+  background-color: #e6f4fd;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+/* konten artikel */
+.wrap-text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 1% 2%;
+  padding: 1%;
+  min-width: 25%;
+  max-width: 100vh;
 }
