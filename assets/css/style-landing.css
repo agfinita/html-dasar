@@ -28,7 +28,7 @@
 
 /* carousel-angka */
 .number {
-    color: #5c5b5b;
+    color: var(--netral-color-white);
     font-size: 16px;
     font-weight: bold;
     padding: 8px 12px;
@@ -58,7 +58,8 @@
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(0,0,0,0.8);
 }
 
@@ -95,7 +96,7 @@ html {
     height: 5vh;
 }
 
-/* kontak */
+/*  kontak  */
 .contact {
     position: absolute;
     margin: auto;
@@ -113,10 +114,53 @@ html {
     background-color: var(--bg-items-product);
 }
 
-/*.container-contact {   luaran 
+/*  start landing dom html  */
+.galeri-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.galeri-column {
+    float: left;
+    width: 20%;
+}
+
+.img-pointer {
+    cursor: pointer;
+}
+
+.select-img {
+    opacity: 0.6;
+}
+
+.container-galeri-slide {
+    display: none;
+}
+
+.image-carousel-container {
     position: relative;
-    margin: 50%;
-    padding: 20%;
-    
-    border: 2px solid;
-}*/
+    box-sizing: border-box;
+    margin: 4% 20% 0 20%;
+}
+
+.caption-image {
+    text-align: center;
+    background-color: var(--choco-primer);
+    padding: 2px 16px;
+    color: white;
+}
+
+.active,
+.select-img:hover {
+    opacity: 1;
+}
+
+.image-carousel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    min-height: auto;
+    max-height: auto;
+}

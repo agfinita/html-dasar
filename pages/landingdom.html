@@ -34,42 +34,62 @@
             </ul>
         </nav>
 
-        <section class="carousel-container">
-            <div class="carousel-container-item slides-item">
+        <section class="image-carousel-container">
+            <div class="container-galeri-slide">
                 <div class="number">1 / 5</div>
-                <img src="../assets/img/img-landing/pict07.png" alt="shop_boucket" width="100%" >
+                <img src="../assets/img/img-landing/pict07.png" alt="Shop Bucket" class="image-carousel">
             </div>
 
-            <div class="carousel-container-item slides-item">
+            <div class="container-galeri-slide">
                 <div class="number">2 / 5</div>
-                <img src="../assets/img/img-landing/pict08.png" alt="shop_boucket" width="100%" >
+                <img src="../assets/img/img-landing/pict08.png" alt="Shop Bucket" class="image-carousel">
             </div>
 
-            <div class="carousel-container-item slides-item">
+            <div class="container-galeri-slide">
                 <div class="number">3 / 5</div>
-                <img src="../assets/img/img-landing/pict05.png" alt="shop_boucket" width="100%" >
+                <img src="../assets/img/img-landing/pict05.png" alt="Shop Bucket" class="image-carousel" >
             </div>
 
-            <div class="carousel-container-item slides-item">
+            <div class="container-galeri-slide">
                 <div class="number">4 / 5</div>
-                <img src="../assets/img/img-landing/pict09.png" alt="shop_boucket" width="100%" >
+                <img src="../assets/img/img-landing/pict09.png" alt="Shop Bucket" class="image-carousel" >
             </div>
 
-            <div class="carousel-container-item slides-item">
+            <div class="container-galeri-slide">
                 <div class="number">5 / 5</div>
-                <img src="../assets/img/img-landing/pict06.png" alt="shop_boucket" width="100%" >
+                <img src="../assets/img/img-landing/pict06.png" alt="Shop Bucket" class="image-carousel">
             </div>
         
             <!-- next and previous button -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-            <div style="text-align: center;">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
+            <!-- image text -->
+            <div class="caption-image">
+                <p id="caption"></p>
+            </div>
+
+            <!-- mini galeri product -->
+            <div class="galeri-row">
+                <div class="galeri-column">
+                    <img class="select-img img-pointer" src="../assets/img/img-landing/pict07.png" alt="Shop Bucket" width="100%" onclick="currentSlide(1)" >
+                </div>
+
+                <div class="galeri-column">
+                    <img class="select-img img-pointer" src="../assets/img/img-landing/pict08.png" alt="Shop Bucket" width="100%" onclick="currentSlide(2)" >
+                </div>
+
+                <div class="galeri-column">
+                    <img class="select-img img-pointer" src="../assets/img/img-landing/pict05.png" alt="Shop Bucket" width="100%" onclick="currentSlide(3)" >
+                </div>
+
+                <div class="galeri-column">
+                    <img class="select-img img-pointer" src="../assets/img/img-landing/pict09.png" alt="Shop Bucket" width="100%" onclick="currentSlide(4)" >
+                </div>
+
+                <div class="galeri-column">
+                    <img class="select-img img-pointer" src="../assets/img/img-landing/pict06.png" alt="Shop Bucket" width="100%" onclick="currentSlide(5)" >
+                </div>
             </div>
         </section>
 
@@ -81,7 +101,7 @@
     
             <section class="sec-container-product">
                 <div>   
-                    <img src="../assets/img/img-product/bb01.png" width="150" height="150" alt="product01">
+                    <img src="../assets/img/img-product/bb01.png" class="img-product" alt="product01">
                     <h4>Bucket Doll</h4>
                     <p>Code            : bb01</p> 
                     <p>Price           : 180K</p>
@@ -90,7 +110,7 @@
                 </div>
     
                 <div>
-                    <img src="../assets/img/img-product/bb02.png" width="150" height="150"  alt="product02">
+                    <img src="../assets/img/img-product/bb02.png" class="img-product"  alt="product02">
                     <h4>Bucket Doll</h5>
                     <p>Code            : bb02</p> 
                     <p>Price           : 175K</p>
@@ -99,7 +119,7 @@
                 </div>
     
                 <div>
-                    <img src="../assets/img/img-product/bbg01.png" width="150" height="150"  alt="product03">
+                    <img src="../assets/img/img-product/bbg01.png" class="img-product"  alt="product03">
                     <h4>Bucket Flower</h5>
                     <p>Code            : bbg01</p> 
                     <p>Price           : 60K</p>
@@ -108,7 +128,7 @@
                 </div>
     
                 <div>
-                    <img src="../assets/img/img-product/bbg02.png" width="150" height="150"  alt="product04">
+                    <img src="../assets/img/img-product/bbg02.png" class="img-product"  alt="product04">
                     <h4>Bucket Flower</h5>
                     <p>Code            : bbg02</p> 
                     <p>Price           : 20K</p>
@@ -117,7 +137,7 @@
                 </div>
     
                 <div>
-                    <img src="../assets/img/img-product/bm01.jpg" width="150" height="150"  alt="product05">
+                    <img src="../assets/img/img-product/bm01.jpg" class="img-product"  alt="product05">
                     <h4>Bucket Money</h5>
                     <p>Code            : bm01</p> 
                     <p>Price           : 60K</p>
@@ -126,7 +146,7 @@
                 </div>
     
                 <div> 
-                    <img src="../assets/img/img-product/bm03.jpg" width="150" height="150" alt="product06">
+                    <img src="../assets/img/img-product/bm03.jpg" class="img-product" alt="product06">
                     <h4>Bucket Money</h5>
                     <p>Code            : bm02</p> 
                     <p>Price           : 225K</p>
@@ -135,7 +155,7 @@
                 </div>
     
                 <div> 
-                    <img src="../assets/img/img-product/bm02.jpg" width="150" height="150" alt="product07">
+                    <img src="../assets/img/img-product/bm02.jpg" class="img-product" alt="product07">
                     <h4>Bucket Money</h5>
                     <p>Code            : bm03</p> 
                     <p>Price           : 2000000K</p>
@@ -144,7 +164,7 @@
                 </div>
     
                 <div>
-                    <img src="../assets/img/img-product/bm04.png" width="150" height="150" alt="product08">
+                    <img src="../assets/img/img-product/bm04.png" class="img-product" alt="product08">
                     <h4>Bucket Money</h5>
                     <p>Code            : bm04</p> 
                     <p>Price           : 310K</p>
@@ -153,7 +173,7 @@
                 </div>
     
                 <div>
-                    <img src="../assets/img/img-product/bm05.png" width="150" height="150" alt="product09"> 
+                    <img src="../assets/img/img-product/bm05.png" class="img-product" alt="product09"> 
                     <h4>Bucket Money</h5>
                     <p>Code            : bm05</p> 
                     <p>Price           : 255K</p>
@@ -162,7 +182,7 @@
                 </div>
     
                 <div>
-                    <img src="../assets/img/img-product/bs01.png" width="150" height="150" alt="product10"> 
+                    <img src="../assets/img/img-product/bs01.png" class="img-product" alt="product10"> 
                     <h4>Bucket Snack</h5>
                     <p>Code            : bs01</p> 
                     <p>Price           : 25K</p>
@@ -171,7 +191,7 @@
                 </div>
     
                 <div>
-                    <img src="../assets/img/img-product/bs02.png" width="150" height="150" alt="product11"> 
+                    <img src="../assets/img/img-product/bs02.png" class="img-product" alt="product11"> 
                     <h4>Bucket Snack</h5>
                     <p>Code            : bs02</p> 
                     <p>Price           : 75K</p>
@@ -180,7 +200,7 @@
                 </div>
     
                 <div>
-                    <img src="../assets/img/img-product/hampers-gift.png"  width="150" height="150" alt="product12"> 
+                    <img src="../assets/img/img-product/hampers-gift.png"  class="img-product" alt="product12"> 
                     <h4>Bucket Snack</h5>
                     <p>Code            : gift01</p> 
                     <p>Price           : 55K</p>
@@ -242,6 +262,6 @@
         </div>
         </section>
 
-        <script src="../assets/js/landing.js"></script>
+        <script src="../assets/js/landingdom.js"></script>
     </body>
 </html>

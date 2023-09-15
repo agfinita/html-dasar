@@ -95,3 +95,10 @@ div h4 {
 .button-product:hover {
     background-color: var(--bg-button);
 }
+/* end button */
+
+/* image product */
+.img-product {
+    width: 150px;
+    height: 150px;
+}
