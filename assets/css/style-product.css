@@ -1,4 +1,4 @@
-.sec-container-product {
+#sec-container-product {
     /*border: 3px groove var(--netral-color-black);
     border-radius: 3px;*/
     display: flex;
@@ -12,7 +12,7 @@
     margin: 0 2% 2% 2%;
 }
 
-.sec-container-product > section {
+#sec-container-product > section {
     margin: 8px;
     padding: 8px 15px;
     background-color: var(--bg-items-product);
@@ -20,27 +20,39 @@
     border-radius: 8px;
 }
 
-.sec-container-product section:hover {
+#sec-container-product section:hover {
     box-shadow: 5px 5px 20px var(--netral-color-black);
     border: 2px solid var(--choco-primer);
 }
 
-.sec-container-product section a {
+#sec-container-product section a {
     text-decoration: none;
     color: var(--object-product);
 }
 
-.sec-container-product section a:hover {
+#sec-container-product section a:hover {
     color: var(--object-product-2);
 }
 
-.sec-container-product section p {
+#sec-container-product section p {
     margin: 5px 0;
     font-size: 15px;
 }
 
-.sec-container-product section p:nth-child(3) {
+#sec-container-product section p:nth-child(3) {
     margin-top: -6px;
+}
+
+#sec-container-product section p:nth-child(3)::before {
+    content: "Code  : ";
+}
+
+#sec-container-product section p:nth-child(4)::before {
+    content: "Price : "
+}
+
+#sec-container-product section p:nth-child(4)::after {
+    content: "K"
 }
 
 /* variable */
@@ -53,7 +65,7 @@
     --netral-color-black: black;
     --bg-items-product: rgba(245, 245, 220, 0.414);
     --border-items-product: rgb(103, 47, 6);
-    --object-product: rgb(113, 113, 213);
+    --object-product: rgb(121, 120, 120);
     --font-global: "Helvetica";
     --object-product-2: rgb(9, 9, 247);
 }

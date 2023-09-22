@@ -90,9 +90,14 @@ button {
 
 video {
   position: absolute;
-  top: 18%;
-  left: 55%;
+  top: 19%;
+  left: 59%;
 }
+
+/* .input-style {
+  width: 50%;
+  padding: 5px;
+} */
 
 input[type=password], input [type=text] {
   border: 5px rgba(149, 118, 81, 0.914);
@@ -101,7 +106,6 @@ input[type=password], input [type=text] {
 input[type=radio] {
   height: 1%;
   width: 2%;
-  
 }
 
 img[title=logo], img[title=sandi] {
@@ -213,4 +217,111 @@ img[title=logocoffe] {
   padding: 1%;
   min-width: 25%;
   max-width: 100vh;
+}
+
+
+/* breakpoint responsive */
+
+/*tablet*/
+@media (min-width:768px) and (max-width:1023px) {
+  .navbar-list {
+    width: 28%;
+  }
+
+  .sec-items-login {
+    margin: 8% 20% 8% 8%;
+    width: 500px;
+  }
+
+}
+
+/*smarthphone*/
+@media (min-width: 560px) and (max-width: 750px) {
+  .navbar-list {
+    width: 30%;
+  }
+
+  .sec-items-login {
+    margin: 8% 20% 5% 2%;
+    width: 500px;
+  }
+
+  .navbar {
+    justify-content: space-around;
+
+  }
+  
+  .navbar div {
+    font-size: 12px;
+    
+  }
+
+  .navbar-list {
+    position: relative;
+  }
+
+  .navbar-list li a {
+    font-size: 12px;
+  }
+
+  .btn-dropdown {
+    font-size: 12px;
+  }
+
+  .sec-items-login video {
+    top: 20%;
+    width: 40%;
+  }
+
+  .input-style {
+    width: 30%;
+    padding: 5px;
+  }
+
+  .sec-items-login video {
+    left: 56%;
+  }
+}
+
+/**/
+@media (min-width: 300px) and (max-width:559px) {
+  .sec-items-login {
+    margin: 8% 20% 5% 2%;
+  }
+
+  .navbar {
+    justify-content: flex-start;
+
+  }
+  
+  .navbar div {
+    font-size: 10px;
+    
+  }
+
+  .navbar-list {
+    position: relative;
+    left: 25%;
+  }
+
+  .navbar-list li a {
+    font-size: 10px;
+  }
+
+  .btn-dropdown {
+    font-size: 9px;
+  }
+
+  .sec-items-login video {
+    position: relative;
+    top: 0.5%;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+/* input-style */
+.input-style {
+  width: 50%;
+  padding: 5px;
 }

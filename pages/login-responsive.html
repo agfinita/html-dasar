@@ -43,11 +43,11 @@
                 <form enctype="text/plain" action="form.html" method="get" name="form-login">
                     <label for="Username"><img src="../assets/img/login1 (1).png" title="logo"> Username</label><br>
                     <input type="text" name="username" id="Username" required placeholder=" Masukkan username"
-                    style="width: 40%; padding: 5px;"><br><br>
+                    class="input-style"><br><br>
     
                     <label for="Password"><img src="../assets/img/lock.png" title="sandi"> Password</label><br>
                     <input type="password" name="password" id="Password" required placeholder=" Masukkan password"
-                    style="width: 40%; padding: 5px;"><br>
+                    class="input-style"><br>
     
                     <input type="radio" id="simpan" name="pilih">
                     <label for="simpan"><small>Stay signed</small></label>
@@ -55,7 +55,7 @@
                     <input type="radio" id="lupa" name="pilih">
                     <label for="pilih"><small>Forgot password?</small></label><br><br>
     
-                    <button type="submit" name="login"><b>Submit</b></button><br>
+                    <button type="submit" name="login" class="input-style"><b>Submit</b></button><br>
                     <small>Not registered? <a href="" style="text-decoration: none;">Create account</a></small>
                 </form>
     
@@ -66,5 +66,8 @@
                 </video>
             </section>
         </section>
+        
+    <!-- javascript start here-->
+    <script src="../assets/js/login.js"></script>
     </body>
 </html>

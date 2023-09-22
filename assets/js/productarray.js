@@ -26,12 +26,10 @@ const imageUrls = [
 ];
 
 let currentIndex = 0; 
-
         
 function displayImage(index) {
     // membuat HTMLImageElement
     let productImage = new Image(150, 150);
-
     // memberi attribut src ke element gambar
     productImage.src = imageUrls[index];
 
