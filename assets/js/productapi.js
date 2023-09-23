@@ -89,23 +89,51 @@ const productArray = [
 // membuat variabel untuk menempatkan data
 const card = document.getElementById("sec-container-product");
 
-// inisialisasi i
-const i = productArray[0].image;
-const productImage  = new Image(150, 150);   // membuat elementHTMLImage
-productImage.src    = i ;    // memberi attribut src pada gambar
-
-
-// menyediakan variabel kosong
+// menyediakan variabel kosong untuk data keseluruhan
 let item = " ";
 
 // perulangan untuk menampilkan data
 productArray.forEach((value) => {
+    const productImage = new Image(150, 150);   // membuat elementHTMLImage
+    productImage.src = value.image;             // attribute src gambar
+
     item += `
-        <div id="img-product"> ${value.image[i]} </div>
+    <section>
+        <div id="image-product"> ${productImage.outerHTML} </div>
         <h4 id="name-product"> ${value.namaItem} </h4>
         <p id="code-product"> ${value.codeItem} </p>
-        <p id="price-product"> ${value.priceItem} </p>
+        <p id="price-product"> ${value.priceItem}</p>
+        <a href="#"><small> selengkapnya </small></a>
+        <button type="button" id="beli" name="beli-12" class="button-product"> Buy Now </button>
+    </section>
     `;
-})
-
+});
 card.innerHTML = item;
+
+// array for get data from API
+let loadProductStore = (() => {
+    // request GET
+    fetch ("https://fakestoreapi.com/products")     // API url
+    .then((response) => {                           // menangkap promise
+        return response.json();
+    }).then((result) => {                           // menangkap promise hasil response
+        // let output  = " ";   ternyata ini ngga dipake baru gambarnya bs jd satu section
+        result.forEach((val) => {
+            item += `
+                <section>
+                    <div id="image-product"> <img src=${val.image} width=150 height=150> </div>
+                    <h4 id="name-product"> ${val.category} </h4>
+                    <p id="code-product"> ${val.id} </p>
+                    <p id="price-product"> ${val.price}</p>
+                    <a href="#"><small> selengkapnya </small></a>
+                    <button type="button" id="beli" name="beli-12" class="button-product"> Buy Now </button>
+                </section>
+            `
+        });
+        card.innerHTML  = item;
+    }).catch((error) => {
+        console.log(error);
+    })
+});
+
+loadProductStore();

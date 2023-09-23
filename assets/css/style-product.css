@@ -14,7 +14,7 @@
 
 #sec-container-product > section {
     margin: 8px;
-    padding: 8px 15px;
+    padding: 15px 15px;
     background-color: var(--bg-items-product);
     border: 2px solid var(--border-items-product);
     border-radius: 8px;
