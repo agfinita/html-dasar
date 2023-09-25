@@ -8,46 +8,25 @@
 
         <!--css-->
         <link rel="stylesheet" href="../assets/css/style.css" />
+        <link rel="stylesheet" href="../assets/css/login.css" />
 
         <!--favicon-->
         <link rel="icon" type="image/png" href="../assets/img/icons8-cat-64.png">
     </head>
 
-    <body class="login">
-        <nav class="navbar">
-            <div>
-                <h1>Nita's Blog</h1>
-            </div>
-            <ul class="navbar-list">
-                <li><a href="../index.html" id="sorot-navbar" >Home</a></li>
-                <li><a href="artikel.html" id="sorot-navbar" >Article</a></li>
-                <li><a href="product.html" id="sorot-navbar" >Shop</a></li>
-                <li class="dropdown-pack"><a id="sorot-navbar" >
-                    <button class="btn-dropdown">More</button></a>
-                    <div class="dropdown-content">
-                        <a href="jsdasar.html"> Javascript Dasar </a>
-                        <a href="landing.html"> Landing Page </a>
-                        <a href="landingdom.html"> Landing DOM </a>
-                        <a href="productarray.html"> Product Array</a>
-                        <a href="productapi.html"> Product API</a>
-                        <a href="product-responsive.html"> Product Responsive</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-
+    <body class="login font1">
         <section class="sec-container-login">
             <section class="sec-items-login">
-                <img src="../assets/img/coffe02.png" width="80" height="80" alt="logocoffe">
-                <h3>SIGN IN</h3>
+                <img src="../assets/img/coffe02.png" class="image-login" alt="logocoffe">
+                <h3>sruput kopi</h3>
     
-                <form enctype="text/plain" action="form.html" method="get" name="form-login">
-                    <label for="Username"><img src="../assets/img/login1 (1).png" title="logo"> Username</label><br>
-                    <input type="text" name="username" id="Username" required placeholder=" Masukkan username"
+                <form enctype="text/plain" action="#" method="get" name="form-login">
+                    <label for="Username" id="mark"> Username</label><br>
+                    <input type="text" name="username" id="Username" placeholder=" Masukkan username"
                     class="input-style" /><br><br>
     
-                    <label for="Password"><img src="../assets/img/lock.png" title="sandi"> Password</label><br>
-                    <input type="password" name="password" id="Password" required placeholder=" Masukkan password"
+                    <label for="Password" id="mark"> Password</label><br>
+                    <input type="password" name="password" id="Password" placeholder=" Masukkan password"
                     class="input-style" /><br>
     
                     <section class="box-input">
@@ -58,12 +37,12 @@
                         <label for="pilih"><small>Forgot password?</small></label><br><br>
                     </section>
     
-                    <button type="submit" name="login" class="input-style"> <b>Submit</b> </button><br>
+                    <button type="submit" name="login" > <b>SIGN IN</b> </button><br>
 
                     <small>Not registered? <a href="" style="text-decoration: none;">Create account</a></small>
                 </form>
     
-                <video width="200" height="200" autoplay muted controls>
+                <video autoplay muted controls>
                     <source src="../assets/videocoffe.mp4" type="video/mp4" />
                     <source src="../assets/videocoffe.mp4" type="video/ogg" />
                     <source src="../assets/videocoffe.mp4" type="video/webm" />
