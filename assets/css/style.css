@@ -273,7 +273,7 @@ video {
   }
 
   .more-content {
-    margin: 0 0 35px 0;
+    margin: 145px 280px 35px 280px;
     padding: 10px;
   }
 
@@ -333,20 +333,21 @@ video {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 5px 15px;
-    padding: 25px;
+    margin: 50px 15px;
+    padding: 0px;
+    font-size: 15px;
   }
 
   .more-content {
-    margin: 125px 0 50px 0;
-    padding: 10px;
+    margin: 150px 190px 50px 190px;
+    padding: 6px;
+    font-size: 13px;
   }
   
   .intro-container {
     position: relative;
     padding: 0;
     top: 3%;
-    left: 0;
   }
 
   .article-items {
