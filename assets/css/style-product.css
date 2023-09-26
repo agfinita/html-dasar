@@ -104,7 +104,7 @@ section h4 {
     font-weight: bold;
 }
 
-.button-product:hover {
+.button-product:active {
     background-color: var(--bg-button);
 }
 /* end button */

@@ -260,6 +260,7 @@ video {
 
 /*  tablet  */
 @media screen and (min-width:768px) and (max-width:1023px) {
+
   .box-input label {
     font-size: 10px;
   }
@@ -270,10 +271,37 @@ video {
     left: 55%;
     top: -53%;
   }
+
+  .more-content {
+    margin: 0 0 35px 0;
+    padding: 10px;
+  }
+
+  .intro-container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .index-box {
+    margin: 15px 5px 5px 5px;
+    padding: 25px;
+    height: 30vh;
+  }
 }
 
 /*  smarthphone */
 @media screen and (min-width: 576px) and (max-width: 750px) {
+
+  .navbar-list {
+    width: 35%;
+  }
+  
+  .navbar-list li a{
+    text-decoration: none;
+    color: black;
+    margin: 8px;
+  }
+
   .box-input label {
     font-size: 10px;
   }
@@ -300,10 +328,62 @@ video {
     margin: 7% 10% 10% 10%;
     height: 100vh;
   }
+
+  .index-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px 15px;
+    padding: 25px;
+  }
+
+  .more-content {
+    margin: 125px 0 50px 0;
+    padding: 10px;
+  }
+  
+  .intro-container {
+    position: relative;
+    padding: 0;
+    top: 3%;
+    left: 0;
+  }
+
+  .article-items {
+    margin: 1%;
+  }
+  
+  .article-items p {
+    padding: 5%;
+    width: 40%;
+    height: 5%;
+  }
+  
+  .task-items {
+    padding: 2%;
+    width: 15%;
+    border-radius: 5%;
+  }
+
+  .article-title {
+    margin: 10% 0 0 2.3%;
+  }
 }
 
 /*  others  */
 @media screen and (min-width: 320px) and (max-width:559px) {
+  .navbar h1 {
+    font-size: 15px;
+  }
+
+  .navbar-list li a {
+    font-size: 12px;
+  }
+
+  .navbar-list {
+    width: 45%;
+  }
+
   .box-input label {
     font-size: 10px;
   }
@@ -333,5 +413,75 @@ video {
 
   form {
     margin-top: 8%;
+  }
+
+  .navbar {
+    width: 64.5vh;
+    overflow: hidden;
+  }
+
+  .navbar-list {
+    width:45%;
+  }
+
+  .index-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 5px;
+    padding: 15px;
+    font-size: 12px;
+  }
+
+  .img-index-container {
+    width:90px;
+    height: 90px;
+  }
+
+  .more-content {
+    margin: 125px 0 40px 0;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .intro-container {
+    position: relative;
+    padding: 0;
+    top: 3%;
+    left: 0;
+  }
+
+  .article-items {
+    margin: 1.8%;
+  }
+  
+  .article-items p {
+    padding: 5%;
+    width: 50%;
+    height: 5%;
+    font-size: 10px;
+  }
+
+  .article-items a small {
+    font-size: 10px;
+  }
+
+  .image-article {
+    width: 110px;
+    height: 110px;
+  }
+  
+  .task-items {
+    padding: 3%;
+    width: 18%;
+    border-radius: 5%;
+  }
+
+  .task-items a {
+    font-size: 13px;
+  }
+
+  .article-title {
+    margin: 10% 0 0 2.3%;
   }
 }
