@@ -60,7 +60,7 @@
 
 /* index-more content  */
 .more-content {
-  margin: 0px 550px 25px 550px;
+  margin: 0px 550px 28px 550px;
   padding: 10px;
   text-align: center;
   background-color: #04283e;
@@ -256,6 +256,7 @@ video {
   border-bottom: 2px solid rgba(50, 107, 220, 0.914);
 }
 
+
 /* Breakpoint Responsive */
 
 /*  tablet  */
@@ -417,7 +418,7 @@ video {
   }
 
   .navbar {
-    width: 64.5vh;
+    width: 63vh;
     overflow: hidden;
   }
 

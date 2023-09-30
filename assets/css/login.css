@@ -49,6 +49,14 @@ button:active {
     --border: rgba(149, 118, 81, 0.914);
 }
 
+/* CSS login layout */
+.bg-login {
+    background-image: url(../img/background03.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 /* Breakpoint Responsoive */
 @media screen and (min-width: 576px) and (max-width: 750px) {
     .input-style {
