@@ -14,26 +14,30 @@ let loadProductStore = (() => {
         // let output  = " ";   ternyata ini ngga dipake baru gambarnya bs jd satu section
         result.forEach((val) => {
             item += `
+            <section class="card container-fluid">
+                <section class="row g-0">
+                    <picture class="col-md-2 p-3">
+                        <img src=${val.image} class="img-fluid rounded-start" style="width: 10rem;" alt="pict_product">
+                    </picture>
 
-            <div class="card">
-              <div class="card-body row">
-                <img src=${val.image} style="width: 9rem;" class="col-2" alt="pict_product">
-                <div class="col">
-                    <br>
-                    <h4 class="card-title col"><strong>${val.title}</strong></h4>
-                    <p class="card-text col"> 
-                        ID          : ${val.id}<br>
-                        Category    : ${val.category}<br>
-                        Price       : ${val.price}K<br>
-                        Description : ${val.description}
-                        <br><br>
-                        <a href="#" class="btn btn-primary"> Buy Now</a>
-                    </p>
-                    
-                </div>
-              </div>
-            </div> 
-                    
+                    <section class="col-md-8">
+                        <section class="card-body">
+                            <h4 class="card-title"><strong>${val.title}</strong></h4>
+                            <p class="card-text text-red">
+                                ${val.price}K
+                            </p>
+
+                            <p class="card-text">
+                                ${val.id} <br>
+                                ${val.category} <br>
+                                ${val.description}
+                            </p>
+
+                            <a href="#" class="btn btn-primary"> Buy Now</a>
+                        </section>
+                    </section>
+                </section>
+            </section>
             `
         });
         card.innerHTML  = item;
